@@ -1,6 +1,8 @@
 // Description: Problems from Monday's class
 // Author: David C. Elliott
-// Date: Sept. 9/2024
+// Date: Sept. 9 - 10/2024
+
+// EDIT: Ternary operators have been introduced, replacing if/else where possible.
 
 // 1.	Create a variable label and assign it the value 
 // "keyincollege". Create another variable tld and assign it 
@@ -110,12 +112,19 @@ let evenNum = [];
 let oddNum = [];
 
 for (let i = 1; i < 101; i++) {
-    if (i % 2 === 0) {
-        evenNum.push(i)
-    }else {
-        oddNum.push(i)
-    }
-};
+//     if (i % 2 === 0) {
+//         evenNum.push(i)
+//     }else {
+//         oddNum.push(i)
+//     }
+// };
+
+
+    i % 2 == 0 ? evenNum.push(i) : oddNum.push(i)
+}
+
+
+
 
 console.log(evenNum);
 console.log(oddNum);
@@ -161,13 +170,13 @@ for (let i = 0; i < divisorLen; i++) {
     divisorTot += divisorNum[i]
 }
 
-if (divisorTot === givenNum) {
-    numResult = givenNum + " is a perfect number!"
-}else {
-    numResult = givenNum + " is not a perfect number..."
-}
-
-console.log(numResult);
+divisorTot === givenNum ? console.log(givenNum + " is a perfect number!") : console.log(givenNum + " is not a perfect number...");
+// if (divisorTot === givenNum) {
+//     numResult = givenNum + " is a perfect number!"
+// }else {
+//     numResult = givenNum + " is not a perfect number..."
+// }
+// console.log(numResult);
 
 
 // 10.	Write a program to determine whether a given number is prime or not
@@ -185,11 +194,12 @@ for (let i = 1; i < (testNum+1); i++) {
     }
 };
 
-if (numDivisors.length == 2) {
-    primeResult = testNum + " is Prime!"
-}else {
-    primeResult = testNum + " is not Prime..."
-};
+numDivisors.length == 2 ? console.log(testNum + " is Prime!") : console.log(testNum + " is not Prime...");
+// if (numDivisors.length == 2) {
+//     primeResult = testNum + " is Prime!"
+// }else {
+//     primeResult = testNum + " is not Prime..."
+// };
 
-console.log(primeResult);
+// console.log(primeResult);
 console.log(" ");
