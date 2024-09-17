@@ -68,6 +68,9 @@ let c1 = parseFloat(TempInput);
 let u1 = UnitInput.toUpperCase()
 
 let ConvertUnitTemp = (num, unit) => {
+    let temp1
+    let unit1
+    let unit2
     if (unit == 'F') {
         temp1 = ((num - 32) * 5/9).toPrecision(3)
         unit1 = "Celsius"
