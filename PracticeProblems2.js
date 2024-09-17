@@ -6,7 +6,9 @@
 
 console.log("Problem #1");
 
-const prompt = require('prompt-sync')(); //Allows for prompt when running in node.js
+const prompt = require('prompt-sync')(); //Allows for prompt when running in node.js,for 
+                                         //this problem and those below Must be active for 
+                                         //all input calls to function.
 const RadiusInput = prompt('Enter the size of the radius: ');
 let r = parseFloat(RadiusInput)
 
