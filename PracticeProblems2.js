@@ -165,11 +165,10 @@ let d1 = parseFloat(DiscInput);
 let FindDiscPrice =(tot, disc) => {
     let price = 0;
     price = tot*(1-(disc || 0)/100);
-    return price;
+    console.log(`The discounted price is ${price}.`);
 }
 
-
-console.log(FindDiscPrice(n1,d1));
+FindDiscPrice(n1,d1);
 console.log(" ");
 
 // 9. Function that takes a number of seconds as a Number, returning
